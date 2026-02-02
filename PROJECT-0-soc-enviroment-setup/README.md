@@ -8,6 +8,6 @@ FOCUS AREAS
 - Log ingestion
 - SIEM enablement using Microsoft Sentinel
 
--  OUTCOME
-A functional SOC foundation ready for detection, investigation, and automation use cases.
+-  OUTCOME:
+A functional "SOC LAB" ready for detection, investigation, and automation use cases.
 
