@@ -11,3 +11,4 @@ FOCUS AREAS
 -  OUTCOME:
 A functional "SOC LAB" ready for detection, investigation, and automation use cases.
 
+
