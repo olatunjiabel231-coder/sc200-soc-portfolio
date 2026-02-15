@@ -7,11 +7,11 @@ Objective:
 This project focused on detecting and investigating suspicious login activity using Microsoft Sentinel. I collected authentication logs, created a detection query with KQL, built an analytics rule, and investigated a real incident.
 
 Tools Used:
-Microsoft Sentinel
-Microsoft Defender
-Microsoft Entra ID (Azure AD)
-Kusto Query Language (KQL)
-Log Collection
+Microsoft Sentinel,
+Microsoft Defender,
+Microsoft Entra ID (Azure AD),
+Kusto Query Language (KQL),
+Log Collection,
 I connected Entra ID sign-in logs to Microsoft Sentinel and confirmed that failed login activity was visible for monitoring.
 
 Detecting Suspicious Activity
@@ -30,8 +30,8 @@ Incident Investigation:
 An incident titled “Attempts to sign in to disabled accounts” was generated. Investigation showed repeated failed login attempts against a disabled account, with no successful compromise.
 
 Skills Demonstrated:
-Log ingestion in Microsoft Sentinel
-KQL detection query writing
-Analytics rule creation
-Security incident investigation
-Understanding brute-force attack behaviour
+Log ingestion in Microsoft Sentinel,
+KQL detection query writing,
+Analytics rule creation,
+Security incident investigation,
+Understanding brute-force attack behaviour.
