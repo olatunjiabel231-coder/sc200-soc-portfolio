@@ -1,14 +1,40 @@
-PROJECT 0 - SOC ENVIROMENT SET UP
+# Project 0 — SOC Environment Setup
 
-OBJECTIVE:
+## Objective
 Establish a Microsoft cloud-based SOC environment aligned with the SC-200 exam.
 
-FOCUS AREAS
+---
+
+## Focus Areas
+
 - Identity setup (Microsoft Entra ID)
 - Log ingestion
 - SIEM enablement using Microsoft Sentinel
 
--  OUTCOME:
-A functional "SOC LAB" ready for detection, investigation, and automation use cases.
+---
+
+## Outcome
+
+A functional **SOC Lab** ready for:
+
+- Threat detection  
+- Incident investigation  
+- Security monitoring  
+- Automation use cases  
+
+---
+
+## Environment Components
+
+- Microsoft Entra ID (Identity)
+- Azure Log Analytics Workspace
+- Microsoft Sentinel (SIEM)
+
+---
+
+## Status
+
+Completed — SOC environment successfully configured and operational.
+
 
 
