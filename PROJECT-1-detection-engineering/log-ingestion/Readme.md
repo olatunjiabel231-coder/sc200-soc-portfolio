@@ -13,3 +13,9 @@ This query returned recent sign-in records, confirming that authentication logs 
 
 As a result, the SOC environment was confirmed to be receiving log data and was ready for detection and investigation activities.
 
+## Evidence
+
+The screenshot below confirms that Microsoft Entra ID sign-in logs were successfully ingested into Microsoft Sentinel.
+
+![Log Ingestion Verification]( screenshots/sentinel-signinlogs-ingestion.png)
+
