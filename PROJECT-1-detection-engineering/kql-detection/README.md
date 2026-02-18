@@ -44,5 +44,11 @@ The query successfully identified accounts with repeated failed login attempts. 
 ### Status
 
 Completed — detection query created and validated.
+## Evidence
+
+The screenshot below shows the KQL detection query identifying repeated failed login attempts from the same user and IP address.
+
+![Failed Login Detection](screenshots/failed-login-detection.png)
+
 
 
