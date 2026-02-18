@@ -1,12 +1,15 @@
-In this step:
+## Log Ingestion Verification
 
-I confirmed that Microsoft Entra ID sign-in logs were successfully flowing into Microsoft Sentinel. The data source used was Microsoft Entra ID (Azure Active Directory) Sign-in Logs.
+In this step, I verified that Microsoft Entra ID sign-in logs were successfully flowing into Microsoft Sentinel.
 
-To verify that log ingestion was working, I ran a simple KQL query:
+The data source used was **Microsoft Entra ID (Azure Active Directory) — Sign-in Logs**.
 
-SigninLogs | take 5
+To confirm that log ingestion was working correctly, I ran the following KQL query:
+SigninLogs
+| take 5
 
 
-This query showed recent sign-in records, which confirmed that authentication logs were being collected in the Log Analytics workspace.
+This query returned recent sign-in records, confirming that authentication logs were being successfully collected in the Log Analytics workspace.
 
-This means my SOC environment is now receiving log data and is ready for detection and investigation.
+As a result, the SOC environment was confirmed to be receiving log data and was ready for detection and investigation activities.
+
