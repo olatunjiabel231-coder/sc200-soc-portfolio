@@ -8,7 +8,7 @@ This project demonstrates my ability to detect and investigate authentication-ba
 
 ## Objective
 
-The objective of this project was to detect and investigate suspicious authentication activity using Microsoft Sentinel. This included:
+The objective of this project is to detect and investigate suspicious authentication activity using Microsoft Sentinel. This includes:
 
 - Collecting authentication logs
 - Writing a detection query using KQL
