@@ -15,7 +15,11 @@ SigninLogs
     FirstSeen = min(TimeGenerated),
     LastSeen = max(TimeGenerated)
     by UserPrincipalName, IPAddress
-| where FailedAttempts >= 10
+| where FailedAttempts >= 10 
+
+```
+
+
 
 ## Rule Configuration
 
@@ -36,7 +40,7 @@ SigninLogs
 - **IP Address:** IPAddress
 
 ### 1. Rule Overview
-![Rule Overview](https://github.com/olatunjiabel231-coder/sc200-soc-portfolio/blob/main/PROJECT-1-detection-engineering/analytics-rule/screenshots/01-Rule-Overview.png?raw=true)
+![Rule Overview](screenshots/01-Rule-Overview.png)
 
 ### 2. Rule Logic & Scheduling
 ![Rule Logic](screenshots/02-Rule-Logic.png)
