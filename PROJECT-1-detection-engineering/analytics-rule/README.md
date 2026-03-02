@@ -27,27 +27,16 @@ SigninLogs
 
 ## Rule Configuration Screenshots
 
-### 1. Rule Overview
-![Rule Overview](screenshots/01-Rule-overview.png)
 
-### 2. Rule Logic & Scheduling
-(screenshots/02-Rule-Logic.png)
-
-### 3. Entity Mapping
-(screenshots/03-Entity-Mapping.png)
-
-### 4. Event Grouping
-(screenshots/04-Event-Grouping.png)
-
-### 5. Incident Settings]
-(screenshots/05-Incident-settings.png)
-
-## MITRE Mapping
-
-- **Tactic:** Credential Access  
 - **Technique:** T1110 – Brute Force  
 
 ## Entity Mapping
 
 - **Account:** UserPrincipalName  
-- **IP Address:** IPAddress  
+- **IP Address:** IPAddress
+
+![Rule Overview](screenshots/01-Rule-overview.png)
+![Rule Logic](screenshots/02-Rule-Logic.png)
+![Entity Mapping](screenshots/03-Entity-Mapping.png)
+![Event Grouping](screenshots/04-Event-Grouping.png)
+![Incident Settings](screenshots/05-Incident-settings.png)
