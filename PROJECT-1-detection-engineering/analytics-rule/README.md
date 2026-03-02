@@ -23,7 +23,24 @@ SigninLogs
 - **Runs every:** 5 minutes  
 - **Lookback period:** 1 hour  
 - **Alert trigger:** Results > 0  
-- **Severity:** Medium  
+- **Severity:** Medium
+
+## Rule Configuration Screenshots
+
+### 1. Rule Overview
+![Rule Overview](screenshots/01-rule-overview.png)
+
+### 2. Rule Logic & Scheduling
+![Rule Logic](screenshots/02-rule-logic.png)
+
+### 3. Entity Mapping
+![Entity Mapping](screenshots/03-entity-mapping.png)
+
+### 4. Event Grouping
+![Event Grouping](screenshots/04-event-grouping.png)
+
+### 5. Incident Settings
+![Incident Settings](screenshots/05-incident-settings.png)
 
 ## MITRE Mapping
 
