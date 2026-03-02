@@ -34,13 +34,13 @@ SigninLogs
 ![Rule Logic](screenshots/02-Rule-Logic.png)
 
 ### 3. Entity Mapping
-![Entity Mapping](screenshots/03-entity-mapping.png)
+![Entity Mapping](screenshots/03-Entity-Mapping.png)
 
 ### 4. Event Grouping
-![Event Grouping](screenshots/04-event-grouping.png)
+![Event Grouping](screenshots/04-Event-Grouping.png)
 
 ### 5. Incident Settings
-![Incident Settings](screenshots/05-incident-settings.png)
+![Incident Settings](screenshots/05-05-Incident-settings.png)
 
 ## MITRE Mapping
 
