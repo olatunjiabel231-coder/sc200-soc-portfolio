@@ -31,7 +31,7 @@ SigninLogs
 ![Rule Overview](screenshots/01-Rule-overview.png)
 
 ### 2. Rule Logic & Scheduling
-![Rule Logic](screenshots/)
+![Rule Logic](screenshots/02-Rule-Logic.png)
 
 ### 3. Entity Mapping
 ![Entity Mapping](screenshots/03-entity-mapping.png)
