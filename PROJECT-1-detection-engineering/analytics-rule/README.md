@@ -36,7 +36,7 @@ SigninLogs
 - **IP Address:** IPAddress
 
 ### 1. Rule Overview
-![Rule Overview](screenshots/01-Rule-Overview.png)
+![Rule Overview](https://github.com/olatunjiabel231-coder/sc200-soc-portfolio/blob/main/PROJECT-1-detection-engineering/analytics-rule/screenshots/01-Rule-Overview.png?raw=true)
 
 ### 2. Rule Logic & Scheduling
 ![Rule Logic](screenshots/02-Rule-Logic.png)
