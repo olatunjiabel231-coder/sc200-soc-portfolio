@@ -28,10 +28,10 @@ SigninLogs
 ## Rule Configuration Screenshots
 
 ### 1. Rule Overview
-![Rule Overview](screenshots/01-rule-overview.png)
+![Rule Overview](screenshots/01-Rule-overview.png)
 
 ### 2. Rule Logic & Scheduling
-![Rule Logic](screenshots/02-rule-logic.png)
+![Rule Logic](screenshots/)
 
 ### 3. Entity Mapping
 ![Entity Mapping](screenshots/03-entity-mapping.png)
