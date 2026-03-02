@@ -36,22 +36,17 @@ SigninLogs
 - **IP Address:** IPAddress
 
 ### 1. Rule Overview
-
 ![Rule Overview](screenshots/01-Rule-Overview.png)
 
 ### 2. Rule Logic & Scheduling
-
 ![Rule Logic](screenshots/02-Rule-Logic.png)
 
 ### 3. Entity Mapping
-
 ![Entity Mapping](screenshots/03-Entity-Mapping.png)
 
 ### 4. Event Grouping
-
 ![Event Grouping](screenshots/04-Event-Grouping.png)
 
 ### 5. Incident Settings
-
 ![Incident Settings](screenshots/05-Incident-Settings.png)
 
