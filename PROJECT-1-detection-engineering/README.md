@@ -20,4 +20,7 @@ The objective of this project is to detect and investigate suspicious authentica
 ## Tools Used
 
 - Microsoft Sentinel
+- Azure Active Directory (Entra ID)
+- Log Analytics Workspace
+- Kusto Query Language (KQL)
 
