@@ -31,16 +31,16 @@ SigninLogs
 ![Rule Overview](screenshots/01-Rule-overview.png)
 
 ### 2. Rule Logic & Scheduling
-![Rule Logic](screenshots/02-Rule-Logic.png)
+(screenshots/02-Rule-Logic.png)
 
 ### 3. Entity Mapping
-![Entity Mapping](screenshots/03-Entity-Mapping.png)
+(screenshots/03-Entity-Mapping.png)
 
 ### 4. Event Grouping
-![Event Grouping](screenshots/04-Event-Grouping.png)
+(screenshots/04-Event-Grouping.png)
 
-### 5. Incident Settings
-![Incident Settings](screenshots/05-05-Incident-settings.png)
+### 5. Incident Settings]
+(screenshots/05-Incident-settings.png)
 
 ## MITRE Mapping
 
