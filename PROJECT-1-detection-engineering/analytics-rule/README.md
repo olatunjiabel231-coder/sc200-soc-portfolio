@@ -39,6 +39,8 @@ SigninLogs
 - **Account:** UserPrincipalName  
 - **IP Address:** IPAddress
 
+## Rule Configuration Screenshots
+
 ### 1. Rule Overview
 ![Rule Overview](screenshots/01-Rule-Overview.png)
 
