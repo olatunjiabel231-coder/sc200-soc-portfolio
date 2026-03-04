@@ -90,3 +90,54 @@ This project demonstrates how Microsoft Sentinel can be used to detect suspiciou
 * Consider blocking or monitoring the source IP address if repeated activity occurs
 * Maintain continuous monitoring of Azure AD sign-in logs
 
+## 📸 Investigation Screenshots
+
+The following screenshots document the full investigation workflow for the brute-force detection incident.
+
+### 1. Incident Queue
+Shows the SOC incident dashboard where multiple incidents are generated and prioritized.
+
+![Incident Queue](screenshots/01-Incidents-queue.png)
+
+---
+
+### 2. Attack Story Graph
+Displays the entity relationship between the targeted user account and the attacking IP address.
+
+![Attack Story Graph](screenshots/02-Attack-story-graph.png)
+
+---
+
+### 3. Alerts Generated
+Shows multiple alerts triggered by the analytics rule due to repeated failed sign-in attempts.
+
+![Alerts Generated](screenshots/03-Alerts-generated.png)
+
+---
+
+### 4. Query Results
+Displays the query output confirming the detection of multiple failed authentication attempts.
+
+![Query Results](screenshots/04-Query-results.png)
+
+---
+
+### 5. IP Entity Investigation
+Shows investigation details for the source IP address involved in the brute-force activity.
+
+![IP Entity Investigation](screenshots/05-Ip-entity-investigation.png)
+
+---
+
+## 🔍 Investigation Summary
+
+These screenshots demonstrate the end-to-end SOC investigation process:
+
+- Detection of suspicious activity using **KQL analytics rules**
+- Alert generation from repeated failed authentication attempts
+- Incident creation and triage in **Microsoft Defender / Sentinel**
+- Entity correlation between **user account and IP address**
+- Threat entity investigation of the **source IP address**
+
+This investigation confirms a **potential brute-force login attempt** targeting a user account from a single external IP address.
+
