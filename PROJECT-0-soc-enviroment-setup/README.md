@@ -233,6 +233,54 @@ Purpose of the agent:
 
 ---
 
+## SOC Lab Architecture
+
+### On-Premises Environment (VMware)
+
+```
+Windows Server 2022 VM
+        │
+        │ Azure Arc Agent
+        ▼
+```
+
+### Microsoft Azure
+
+```
+Azure Arc
+        │
+        ▼
+Azure Monitor Agent (AMA)
+        │
+        ▼
+Data Collection Rule
+        │
+        ▼
+Log Analytics Workspace
+        │
+        ▼
+Microsoft Sentinel (SIEM)
+        │
+        ▼
+Security Event Analysis (KQL Queries)
+```
+
+---
+
+## Tools Used
+
+- VMware Workstation
+- Windows Server 2022
+- Microsoft Azure
+- Azure Arc
+- Azure Monitor Agent (AMA)
+- Log Analytics Workspace
+- Microsoft Sentinel
+- Kusto Query Language (KQL)
+---
+
+
+
 
 
 
