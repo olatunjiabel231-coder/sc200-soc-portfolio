@@ -213,6 +213,26 @@ Purpose of the agent:
 
 ---
 
+## Screenshots
+
+### Windows Server VM Configuration
+![Windows Server VM](screenshots/Windows-Server-Vm-Configuration.png)
+
+### Azure Arc Machine Connected
+![Azure Arc Machine](screenshots/Azure-Arc-Machine-Connected.png)
+
+### Azure Monitor Agent Installed
+![Azure Monitor Agent](screenshots/Azure-Monitor-Windows-Agent.png)
+
+### Windows Security Events Collected
+![Windows Security Events](screenshots/Windows-Security-Events.png)
+
+### Security Logs Visible in Microsoft Sentinel
+![Sentinel Security Events](screenshots/Sentinel-Security-Events.png)
+
+
+---
+
 
 
 
