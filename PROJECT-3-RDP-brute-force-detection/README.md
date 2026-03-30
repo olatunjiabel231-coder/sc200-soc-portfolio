@@ -63,6 +63,12 @@ During the simulation, the following logs were generated:
 
 Initially, I thought RDP would always show LogonType 10, but I later discovered that failed attempts were showing as LogonType 3 instead.
 
+### 🔹 Failed Login Attempts
+![Failed Logins](Screenshots/failed-logons.png)
+
+### 🔹 Successful RDP Login
+![Successful Login](Screenshots/successful-rdp-logon.png)
+
 ---
 
 ## 🔍 Detection Logic
@@ -94,3 +100,68 @@ SecurityEvent
     by Account, IpAddress, bin(TimeGenerated, 30m)
 | where FailedAttempts >= 10 and SuccessfulAttempts >= 1
 | sort by FailedAttempts desc
+```
+
+### 🔹 Detection Result
+![Detection Result](Screenshots/bruteforce-detection-success.png)
+
+---
+
+## ⚙️ Analytics Rule
+
+The detection query was used to create a scheduled analytics rule in Microsoft Sentinel.
+
+### 🔹 Rule Configuration
+![Analytics Rule](Screenshots/analytics-rule-kql.png)
+
+---
+
+## 🚨 Incident Creation
+
+Once the rule was triggered, Microsoft Sentinel generated an incident.
+
+### 🔹 Incident Created
+![Incident](Screenshots/incident-created.png)
+
+---
+
+## 🧪 Investigation
+
+Inside the incident, I investigated the attack using the attack graph.
+
+### 🔹 Attack Graph / Entities
+![Attack Graph](Screenshots/incident-attack-graph.png)
+
+From the investigation:
+
+- Multiple failed attempts were observed from the same IP  
+- The same account was targeted  
+- A successful login occurred after the failed attempts  
+- All activities were within a short timeframe  
+
+---
+
+## ✅ Conclusion
+
+This project demonstrates how a brute force attack can be detected using Microsoft Sentinel by correlating failed and successful login events.
+
+It also shows the importance of understanding log types (LogonType 3 vs 10) and how small details can affect detection results.
+
+Through this lab, I was able to:
+
+- Simulate a real attack scenario  
+- Write and test KQL queries  
+- Build a detection rule  
+- Investigate an incident in Microsoft Sentinel  
+
+---
+
+## 💭 Personal Note
+
+At first, I was confused when my detection didn’t work immediately.  
+
+I later realized that the issue was related to time range and how login sessions were handled.  
+
+Fixing that helped me better understand how logs are generated and how detection logic works in real scenarios.
+
+This project really helped me move from just writing queries to actually thinking like a SOC analyst.
