@@ -112,7 +112,7 @@ SecurityEvent
 The detection query was used to create a scheduled analytics rule in Microsoft Sentinel.
 
 ### 🔹 Rule Configuration
-![Analytics Rule](Screenshots/analytics-rule-kql.png)
+![Analytics-Rule](Screenshots/analytics-rule-kql.png)
 
 ---
 
