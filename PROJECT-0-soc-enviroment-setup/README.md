@@ -10,6 +10,7 @@ Establish a Microsoft cloud-based SOC environment aligned with the SC-200 exam.
 - Identity setup (Microsoft Entra ID)
 - Log ingestion
 - SIEM enablement using Microsoft Sentinel
+- Security monitoring infrastructure
 
 ---
 
@@ -20,7 +21,9 @@ A functional **SOC Lab** ready for:
 - Threat detection  
 - Incident investigation  
 - Security monitoring  
-- Automation use cases  
+- Automation use cases
+- Real-time security monitoring
+- Attack simulation and detection testing
 
 ---
 
