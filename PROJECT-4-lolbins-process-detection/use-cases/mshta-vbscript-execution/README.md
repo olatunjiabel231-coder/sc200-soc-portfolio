@@ -7,7 +7,7 @@ The VBScript used in this simulation displayed a simple message box (`msgbox Tes
 
 VBScript is executed via `mshta.exe`, a trusted Windows binary commonly abused for script execution.
 
-In a real-world scenario, an attacker could replace this benign script with a malicious payload to download malware, execute commands, or establish persistence.
+In a real-world scenario, an attacker could replace this script with a malicious payload to download malware, execute commands, or establish persistence.
 
 ---
 
@@ -37,7 +37,8 @@ Event
 ---
 
 ### 📸 Detection Result
-![MSHTA Detection](../screenshots/mshta-detection.png)
+![MSHTA Detection](../screenshots/mshta-vbscript-detection.png)
+
 
 ---
 
@@ -68,7 +69,7 @@ Event
 ---
 
 ### 📸 Process Execution Evidence
-![MSHTA CommandLine](../screenshots/mshta-commandline.png)
+![MSHTA CommandLine](../screenshots/mshta-vbscript-commandline.png)
 
 ---
 
