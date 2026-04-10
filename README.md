@@ -30,7 +30,7 @@ It documents my journey toward becoming a **SOC Analyst**, with a strong focus o
 - **Log Analytics Workspace**  
 - **Analytics Rules**  
 - **Azure Arc** (Hybrid Environment)  
-- **Windows Security Events**  
+- **Windows Security Events & Sysmon**  
 
 ---
 
