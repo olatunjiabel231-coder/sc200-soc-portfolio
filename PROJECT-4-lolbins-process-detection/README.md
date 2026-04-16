@@ -92,7 +92,7 @@ Sysmon provided the visibility needed to:
 
 ---
 
-### 3. Certutil – LOLBin Abuse *(In Progress)*
+### 3. Certutil – LOLBin Abuse 
 - Abuse of `certutil.exe` to download or decode payloads  
 - Often used by attackers for file transfer and evasion  
 
@@ -165,7 +165,7 @@ PROJECT-4-lolbins-process-detection/
 ## 📌 Status
 - MSHTA Detection ✅  
 - PowerShell Detection ✅  
-- Certutil Simulation 🔄  
+- Certutil Simulation ✅  
 
 ---
 
