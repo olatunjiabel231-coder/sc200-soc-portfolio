@@ -96,7 +96,7 @@ Sysmon provided the visibility needed to:
 - Abuse of `certutil.exe` to download or decode payloads  
 - Often used by attackers for file transfer and evasion  
 
-➡️ *(To be added after simulation)*
+➡️ [View Use Case](use-cases/certutil-encoded-command/README.md)
 
 ---
 
