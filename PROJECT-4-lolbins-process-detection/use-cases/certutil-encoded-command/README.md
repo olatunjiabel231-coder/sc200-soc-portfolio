@@ -2,7 +2,7 @@
 
 ## 📌 Attack Simulation
 
-Certutil is one of Windows Process is used basically for Manual verification of Digital certificate, it can be used to execute commands too and also download files.
+Certutil is one of Windows Process used basically for Manual verification of Digital certificate, it can be used to execute commands too and also download files.
 
 Hackers usually take advantage of this Certutil that is part of the Microsoft LOLBIN to download malwares on a target computers, encode files as well. Hackers love to use this Certutil in the background to do all this because the computer firewall hardly block LOLBINS execution. So therefore Analysts sometimes needs to manually hunt for this threats.
 
@@ -26,7 +26,7 @@ Event
 | parse EventData with * '<Data Name="Image">' Image '</Data>' *
 | parse EventData with * '<Data Name="ParentImage">' ParentImage '</Data>' *
 | where Image endswith "certutil.exe"
-| where CommandLine has_any ("-encode", "-decode", "-urlcache", "-split", "-f")
+| where CommandLine has_any ("-encode", "-decode", "-urlcache")
 | project TimeGenerated, Computer, Image, ParentImage, CommandLine
 | order by TimeGenerated desc
 ```
