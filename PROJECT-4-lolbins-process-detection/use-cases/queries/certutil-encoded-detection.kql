@@ -1,1 +1,9 @@
-
+Event
+| where Source=="Microsoft-Windows-Sysmon"
+| where EventID==1
+| parse EventData with * '<Data Name="CommandLine">' CommandLine '</Data>' *
+| parse EventData with * '<Data Name="Image">' Image '</Data>' *
+| parse EventData with * '<Data Name="ParentImage">' ParentImage '</Data>' *
+| where CommandLine has_any ("-encode","-decode","-urlcache")
+| project TimeGenerated,Computer,Image,ParentImage,CommandLine
+| order by TimeGenerated desc
