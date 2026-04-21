@@ -34,6 +34,7 @@ Event
 
 ---
 
+
 ### 📸 Detection Result
 
 ![Certutil KQL Detection](../screenshots/certutil-kql-detection.png)
@@ -62,6 +63,25 @@ In cases like this investigation must be done thoroughly, Parent Image and Image
 
 ---
 
+## ⚙️ Analytics Rule Creation (Automated Detection)
+
+As a SOC analyst, sometimes we need automated threat detection. This can be done in an Azure environment using Azure Analytics Rules and KQL to write queries that automatically detect threats.
+
+I wrote a KQL detection rule to detect suspicious LOLBIN execution (Certutil). The aim of the KQL is to detect any execution of certutil that encodes, decodes, or downloads files using URL cache.
+
+The KQL also demonstrates parent-child process relationships, which helps in identifying how the process was executed.
+
+I used a threshold of ≥ 3. So anytime certutil.exe encodes, decodes, or runs suspicious commands 3 times or more, it automatically generates an alert.
+
+The KQL also detects the first seen and last seen time of each attack.
+
+During the analytics rule creation process, I mapped entities using the host (computer name where the attack happened). I also mapped process details such as Process Name and CommandLine.
+
+All these are shown in the attack story, including the host computer and the type of process that was executed on it.
+
+I correlated all alerts within a 30-minute window into one incident. The query runs every 5 minutes.
+
+Then I created the rule and simulated the attack in PowerShell using certutil to encode a file, which successfully generated an alert and incident.
 ## 🔄 SOC Workflow
 
 When stuffs like this happen in a SOC Environment, it's triage first which is verifying the Alert, then investigate by using the SIEM tool like Microsoft Sentinel to see what has been done.
