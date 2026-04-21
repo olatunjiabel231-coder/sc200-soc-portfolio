@@ -82,6 +82,28 @@ All these are shown in the attack story, including the host computer and the typ
 I correlated all alerts within a 30-minute window into one incident. The query runs every 5 minutes.
 
 Then I created the rule and simulated the attack in PowerShell using certutil to encode a file, which successfully generated an alert and incident.
+
+## 🔍 Certutil-Automated-Detection (KQL Query)
+
+```kql
+Event
+| where Source =="Microsoft-Windows-Sysmon"
+| where EventID ==1
+| where TimeGenerated >= ago(30m)
+| parse EventData with * '<Data Name="CommandLine">' CommandLine '</Data>' *
+| parse EventData with * '<Data Name="ParentImage">' ParentImage '</Data>' *
+| parse EventData with * '<Data Name="Image">' Image '</Data>' *
+| where CommandLine has_any ("-encode","-decode","-urlcache")
+| where Image endswith "certutil.exe" 
+| where ParentImage has_any ("powershell.exe","mshta.exe","cmd.exe")
+| summarize Process=count(),FirstSeen=min(TimeGenerated),Lastseen=max(TimeGenerated) by Computer,CommandLine,Image,ParentImage
+| where Process >= 3 
+| order by Lastseen desc
+```
+
+---
+
+
 ## 🔄 SOC Workflow
 
 When stuffs like this happen in a SOC Environment, it's triage first which is verifying the Alert, then investigate by using the SIEM tool like Microsoft Sentinel to see what has been done.
