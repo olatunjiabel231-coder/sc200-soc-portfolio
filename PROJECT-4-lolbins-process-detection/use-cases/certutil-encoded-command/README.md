@@ -101,6 +101,31 @@ Event
 | order by Lastseen desc
 ```
 
+### 📸 Analytics Rule Configuration
+
+#### Entity Mapping
+![Entity Mapping](../screenshots/certutil-entity-mapping.png)
+
+#### Query Scheduling
+![Query Scheduling](../screenshots/certutil-query-scheduling.png)
+
+#### Incident Grouping
+![Incident Grouping](../screenshots/certutil-incident-grouping.png)
+
+#### Incident Graph
+![Incident Graph](../screenshots/certutil-incident-graph.png)
+
+#### Attack Story
+![Attack Story](../screenshots/certutil-attack-graph.png)
+
+---
+
+### Outcome
+
+The analytics rule successfully detected repeated certutil executions and generated an alert.
+
+The incident graph and attack story provided visibility into the affected host and process execution chain, making investigation easier and faster.
+
 ---
 
 
