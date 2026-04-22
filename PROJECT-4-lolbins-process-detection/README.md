@@ -169,5 +169,4 @@ PROJECT-4-lolbins-process-detection/
 
 ---
 
-## 🔥 Next Step
-Simulate and detect Certutil-based attack
+
