@@ -127,6 +127,43 @@ Simulated a real-world attack involving multiple failed RDP logins followed by a
 
 ---
 
+### 🔹 Project 4: LOLBIN Process Abuse Detection & Investigation
+
+I simulated real-world attacks using different Windows LOLBINs (Living-off-the-Land Binaries) to execute encoded and obfuscated commands, just like how attackers try to hide their activity.
+
+---
+
+### What I Did:
+- Simulated attacks using multiple LOLBINs:
+  - Certutil (encode, decode, download)
+  - PowerShell (encoded commands)
+  - MSHTA (script execution)  
+- Ran encoded and obfuscated commands to mimic attacker behavior  
+- Generated Sysmon logs (Event ID 1 – Process Creation)  
+- Wrote KQL detection queries for each LOLBIN technique  
+- Investigated process execution and parent-child relationships in Microsoft Sentinel  
+
+---
+
+### Key Findings:
+- LOLBINs were executed with suspicious command-line arguments like `-encode`, `-decode`, and encoded PowerShell commands  
+- Parent processes included PowerShell, cmd, and mshta, showing how the commands were executed  
+- Encoded commands made it harder to immediately understand what was done  
+- Different LOLBINs followed similar patterns, which shows how attackers try to evade detection  
+- Clear parent-child process relationships were observed during investigation  
+
+---
+
+### Outcome:
+- Successfully detected multiple LOLBIN abuse techniques using KQL  
+- Identified similar behavior across different binaries, not just one tool  
+- Gained better visibility into encoded and obfuscated command execution  
+- Built a strong detection approach for identifying defense evasion techniques in a SOC environment
+  
+**Status:** ✅ Completed  
+
+👉 [View Project Details](PROJECT-4-lolbins-process-detection)
+
 ## 🚀 Key Achievements
 
 - Built a functional SOC lab environment from scratch  
@@ -152,7 +189,6 @@ Simulated a real-world attack involving multiple failed RDP logins followed by a
 
 Planned projects to expand detection coverage:
 
-- **Project 4:** Lateral Movement Detection  
 - **Project 5:** Data Exfiltration Detection  
 - **Project 6:** Privilege Escalation Detection  
 
@@ -191,8 +227,11 @@ To become a **SOC Analyst / Security Operations Engineer**, specializing in:
 - Move to **Project 1** (detection logic)  
 - Study **Project 2** (false positives)  
 - Review **Project 3** (full attack investigation)  
-
-**For recruiters:**
+- Review **Project 4** (LolBin-process-detection).
+- NOTE **Certutil use-case** (contains Analytics-rule detection query and investigation process)
+  
+**For recruiterss
+- project 4 demonstrates detection evasion usually used by adversaries and how to detect them (Full Soc workflow)
 - Project 3 demonstrates full SOC workflow  
 - Project 2 highlights analytical thinking  
 - All projects show practical, hands-on experience  
@@ -200,7 +239,7 @@ To become a **SOC Analyst / Security Operations Engineer**, specializing in:
 ---
 
 ## 📞 Contact
-
+- **Education:** OND in Computer-Engineering
 - **Certification:** SC-900 (Azure Fundamentals)  
 - **Location:** Nigeria  
 - **GitHub:** https://github.com/olatunjiabel231-coder  
