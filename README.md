@@ -227,10 +227,10 @@ To become a **SOC Analyst / Security Operations Engineer**, specializing in:
 - Move to **Project 1** (detection logic)  
 - Study **Project 2** (false positives)  
 - Review **Project 3** (full attack investigation)  
-- Review **Project 4** (LolBin-process-detection).
+- Review **Project 4** (LolBin process detection).
 - NOTE **Certutil use-case** (contains Analytics-rule detection query and investigation process)
   
-**For recruiterss
+**For recruiters
 - project 4 demonstrates detection evasion usually used by adversaries and how to detect them (Full Soc workflow)
 - Project 3 demonstrates full SOC workflow  
 - Project 2 highlights analytical thinking  
